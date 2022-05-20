@@ -11,4 +11,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.1" PrivateAssets="all" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Components\Dashboard\" />
+    <Folder Include="Components\Login\" />
+    <Folder Include="Pages\Dashboard\" />
+  </ItemGroup>
+
 </Project>

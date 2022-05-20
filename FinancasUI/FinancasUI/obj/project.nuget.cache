@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nRe9Bf/uCe9t2wPIXojDZQDyzU79SKe4Hu3WnULQ13G0u93gdv4FMTY0daUiC+QR4BRRnTcsWGXsRhRQR3daWg==",
+  "dgSpecHash": "9Ui0nrXh5uMOTJRa1zxMff+muHRaNveXvpSh0SYl5HhtUVgq8ET4g03SCTlLDSnJvsnp0u8gXm9hq8u5u5uy9A==",
   "success": true,
   "projectFilePath": "D:\\programas\\financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj",
   "expectedPackageFiles": [
@@ -33,7 +33,7 @@
     "C:\\Users\\lucas\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\lucas\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.1\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.1.nupkg.sha512"
+    "C:\\Users\\lucas\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.4\\microsoft.netcore.app.runtime.mono.browser-wasm.6.0.4.nupkg.sha512"
   ],
   "logs": []
 }
