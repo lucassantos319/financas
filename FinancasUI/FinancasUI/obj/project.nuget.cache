@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9Ui0nrXh5uMOTJRa1zxMff+muHRaNveXvpSh0SYl5HhtUVgq8ET4g03SCTlLDSnJvsnp0u8gXm9hq8u5u5uy9A==",
+  "dgSpecHash": "CQZoh57yygWYDPH5tCaCZMcan2tGZ8RHoxwebyp0hES4qYSq2pD/ja1pvZ0W023X2d0/2z/0UOGJDniBleKs3Q==",
   "success": true,
-  "projectFilePath": "D:\\programas\\financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj",
+  "projectFilePath": "D:\\programas\\Financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.1\\microsoft.aspnetcore.authorization.6.0.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.1\\microsoft.aspnetcore.components.6.0.1.nupkg.sha512",

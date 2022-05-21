@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\programas\\financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj": {}
+    "D:\\programas\\Financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj": {}
   },
   "projects": {
-    "D:\\programas\\financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj": {
+    "D:\\programas\\Financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\programas\\financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj",
+        "projectUniqueName": "D:\\programas\\Financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj",
         "projectName": "FinancasUI",
-        "projectPath": "D:\\programas\\financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj",
+        "projectPath": "D:\\programas\\Financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "D:\\programas\\financas\\FinancasUI\\FinancasUI\\obj\\",
+        "outputPath": "D:\\programas\\Financas\\FinancasUI\\FinancasUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

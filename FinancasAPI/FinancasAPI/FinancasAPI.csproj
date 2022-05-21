@@ -13,4 +13,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FinancasAPI.Applications\FinancasAPI.Applications.csproj" />
+    <ProjectReference Include="..\FinancasAPI.Domain\FinancasAPI.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

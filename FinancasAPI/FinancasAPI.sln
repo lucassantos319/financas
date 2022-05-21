@@ -5,6 +5,12 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancasAPI", "FinancasAPI\FinancasAPI.csproj", "{6A43B31A-8CA8-4334-B3AE-BEAB94243185}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancasAPI.Domain", "FinancasAPI.Domain\FinancasAPI.Domain.csproj", "{F83981FC-2AFD-4D48-BD54-7B0E8E87230B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancasAPI.Infra", "FinancasAPI.Infra\FinancasAPI.Infra.csproj", "{244A0630-C666-4AC6-8E7E-DC32CCFA3F38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancasAPI.Applications", "FinancasAPI.Applications\FinancasAPI.Applications.csproj", "{E39DF2A6-CB5A-4E94-B2B3-68C73AF4CE6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{6A43B31A-8CA8-4334-B3AE-BEAB94243185}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A43B31A-8CA8-4334-B3AE-BEAB94243185}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A43B31A-8CA8-4334-B3AE-BEAB94243185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F83981FC-2AFD-4D48-BD54-7B0E8E87230B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F83981FC-2AFD-4D48-BD54-7B0E8E87230B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F83981FC-2AFD-4D48-BD54-7B0E8E87230B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F83981FC-2AFD-4D48-BD54-7B0E8E87230B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{244A0630-C666-4AC6-8E7E-DC32CCFA3F38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{244A0630-C666-4AC6-8E7E-DC32CCFA3F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{244A0630-C666-4AC6-8E7E-DC32CCFA3F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{244A0630-C666-4AC6-8E7E-DC32CCFA3F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E39DF2A6-CB5A-4E94-B2B3-68C73AF4CE6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E39DF2A6-CB5A-4E94-B2B3-68C73AF4CE6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E39DF2A6-CB5A-4E94-B2B3-68C73AF4CE6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E39DF2A6-CB5A-4E94-B2B3-68C73AF4CE6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
