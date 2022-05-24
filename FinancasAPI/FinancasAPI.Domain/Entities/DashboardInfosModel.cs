@@ -3,7 +3,12 @@ namespace FinancasAPI.Domain.Entities
 {
     public class DashboardInfosModel
     {
-        public List<AccountItensModel> DashboardInfo;
+        public List<AccountItensModel> AccountsInfos;
+
+        public DashboardInfosModel()
+        {
+            AccountsInfos = new List<AccountItensModel>();  
+        }
 
     }
     

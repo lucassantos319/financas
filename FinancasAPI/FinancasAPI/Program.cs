@@ -1,4 +1,6 @@
 using FinancasAPI;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 
 public class Program
 {

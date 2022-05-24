@@ -14,5 +14,6 @@ namespace FinancasAPI.Domain.Interfaces.IRepositories
         void CreateAccount(UserModel newUser);
         void UpdateAccount(UserModel user);
         void DeleteAccount(UserModel user);
+        bool ValidateEmail(string email);
     }
 }

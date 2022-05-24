@@ -1,7 +1,5 @@
-﻿
+﻿using Microsoft.EntityFrameworkCore;
 using FinancasAPI.Domain.Entities;
-using Microsoft.EntityFrameworkCore;
-
 
 namespace FinancasAPI.Infra.data
 {
@@ -28,6 +26,7 @@ namespace FinancasAPI.Infra.data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Username=postgres;Password=root;Database=financas");
+            base.OnConfiguring(optionsBuilder);
         }
 
     }

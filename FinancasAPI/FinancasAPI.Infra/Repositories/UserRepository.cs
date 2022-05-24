@@ -69,5 +69,10 @@ namespace FinancasAPI.Infra.Repositories
                 throw new Exception("Rollback trying create a error message:", ex);
             }
         }
+
+        public bool ValidateEmail(string email)
+        {
+            return _context.Users.Any(x => x.Email.ToLower() == email.ToLower());
+        }
     }
 }

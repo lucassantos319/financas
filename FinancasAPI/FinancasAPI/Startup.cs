@@ -1,4 +1,5 @@
 ﻿using FinancasAPI.Extensions;
+using FinancasAPI.Infra.data;
 using Microsoft.OpenApi.Models;
 
 namespace FinancasAPI
@@ -20,10 +21,10 @@ namespace FinancasAPI
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Nordware.Kazen.API", Version = "v1" });
             });
 
-            //services.AddRepositories();
+            services.AddRepositories();
             services.AddService();
 
-            // services.AddDbContext<Context>(ServiceLifetime.Transient);
+            services.AddDbContext<Context>(ServiceLifetime.Transient);
 
         }
 

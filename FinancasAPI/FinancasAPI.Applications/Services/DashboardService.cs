@@ -17,6 +17,19 @@ namespace FinancasAPI.Applications.Services
 
         public DashboardInfosModel GetInfoDashboard(int userId)
         {
+            var dashInfo = new DashboardInfosModel();
+            var accountsUser = _accountService.GetAccountsByUserId(userId);
+            
+            foreach (var account in accountsUser)
+            {
+                var itens = _itensService.GetItensByAccount(account.Id);
+                dashInfo.AccountsInfos.Add(new AccountItensModel { 
+                    Account = account,
+                    Itens = itens
+                });
+            }
+
+            return dashInfo;
             
         }
     }

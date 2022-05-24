@@ -1,11 +1,10 @@
-﻿
-using FinancasAPI.Domain.Entities;
-using FinancasAPI.Domain.Interfaces.IServices;
-using Microsoft.AspNetCore.Authorization;
+﻿using FinancasAPI.Domain.Interfaces.IServices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FinancasAPI.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class DashboardController : ControllerBase
     {
         private readonly IDashboardService _dashboardService;
@@ -16,12 +15,11 @@ namespace FinancasAPI.Controllers
         }
 
         [HttpGet]
-        [Authorize]
         public IActionResult GetDashboardInfos(int userId)
         {
             try
             {
-                return Ok( _dashboardService.GetInfoDashboard(userId));
+                return Ok(_dashboardService.GetInfoDashboard(userId));
             }
             catch (Exception ex)
             {
