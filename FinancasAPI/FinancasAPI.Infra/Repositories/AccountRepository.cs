@@ -60,7 +60,7 @@ namespace FinancasAPI.Infra.Repositories
             using var transaction = _context.Database.BeginTransaction();
             try
             {
-                _context.Accounts.Add(newAccount);
+                _context.Accounts.Remove(newAccount);
                 _context.SaveChanges();
                 transaction.Commit();
             }
