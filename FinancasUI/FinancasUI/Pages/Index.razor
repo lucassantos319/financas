@@ -1,8 +1,49 @@
 ﻿@page "/"
 @layout BlankLayout
+@inherits LoginComponent
 
+<div class="d-flex justify-content-center" style="margin-top:5%">
+    <div style="width:25%;">
+        <div class="d-flex flex-column">
+            <div class="p-2 flex-column">
+                <h2>Login</h2>
+            </div>
+            <hr />
+            <div style="margin-top:6%">
+                <form @onsubmit="async () => { await SendRequest(); }">
+                    <div class="flex-column">
+                        <div class="d-flex flex-column" >
+                            <span class="p-2">Email*</span>
+                            <input class="p-2" @bind-value="emailUser" style="padding:27px;border:1px solid #c9c9c9;border-radius:20px"/>
+                        </div>
+                        <div class="d-flex flex-column" style="margin-top:20px">
+                            <span class="p-2">Password*</span>
+                            <input class="p-2" @bind-value="passwordUser" style="padding:27px;border:1px solid #c9c9c9;border-radius:20px"/>
+                        </div>
+                        <div style="margin-top:40px;" >
+                            @if (sendLogin == true)
+                            {
+                                <button type="submit" style="padding:10px;width:100%;border-radius:40px;border:1px solid blue;background-color:blue;color:white">
+                                    <div class="spinner-border text-light" role="status">
+                                    </div>
+                                </button>
+                            } 
+                            else
+                            {
+                                <button type="submit" style="padding:17px;width:100%;border-radius:40px;border:1px solid blue;background-color:blue;color:white">
+                                    Login
+                                </button>
+                            }
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
 
+    </div>
+</div>
 
 @code {
 
+    
 }

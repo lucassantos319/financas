@@ -12,17 +12,17 @@ namespace FinancasAPI.Infra.Repositories
         {
             _context = context;
         }
-        public List<UserModel> GetAllAccount()
+        public List<UserModel> GetAllUser()
         {
             return _context.Users.ToList();
         }
 
-        public UserModel GetAccountById(int usersId)
+        public UserModel GetUserById(int usersId)
         {
             return _context.Users.FirstOrDefault(x => x.Id == usersId);
         }
 
-        public void CreateAccount(UserModel newUser)
+        public void CreateUser(UserModel newUser)
         {
             using var transaction = _context.Database.BeginTransaction();
             try
@@ -38,7 +38,7 @@ namespace FinancasAPI.Infra.Repositories
             }
         }
 
-        public void UpdateAccount(UserModel user)
+        public void UpdateUser(UserModel user)
         {
             using var transaction = _context.Database.BeginTransaction();
             try
@@ -54,7 +54,7 @@ namespace FinancasAPI.Infra.Repositories
             }
         }
 
-        public void DeleteAccount(UserModel user)
+        public void DeleteUser(UserModel user)
         {
             using var transaction = _context.Database.BeginTransaction();
             try
@@ -73,6 +73,11 @@ namespace FinancasAPI.Infra.Repositories
         public bool ValidateEmail(string email)
         {
             return _context.Users.Any(x => x.Email.ToLower() == email.ToLower());
+        }
+
+        public UserModel GetUserByEmail(string email)
+        {
+            return _context.Users.FirstOrDefault(x => x.Email.ToLower() == email.ToLower());
         }
     }
 }

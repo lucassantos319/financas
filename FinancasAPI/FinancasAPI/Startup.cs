@@ -1,6 +1,10 @@
-﻿using FinancasAPI.Extensions;
+﻿using FinancasAPI.Applications.Setting;
+using FinancasAPI.Extensions;
 using FinancasAPI.Infra.data;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Text;
 
 namespace FinancasAPI
 {
@@ -23,6 +27,25 @@ namespace FinancasAPI
 
             services.AddRepositories();
             services.AddService();
+            var key = Encoding.ASCII.GetBytes(Settings.Secret);
+           
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
 
             services.AddDbContext<Context>(ServiceLifetime.Transient);
 
@@ -38,10 +61,14 @@ namespace FinancasAPI
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
+            app.UseCors(builder => builder
+                .AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+            );
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }

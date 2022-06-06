@@ -1,6 +1,4 @@
-﻿using FinancasUI.Components;
-
-namespace FinancasUI.ViewModels
+﻿namespace FinancasUI.ViewModels
 {
     public class DashboardViewModel
     {

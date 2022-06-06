@@ -28,7 +28,8 @@ namespace FinancasAPI.Infra.data.Mapping
             entity.Property(x => x.Email)
                 .IsRequired();
 
-            entity.Property(x => x.Token);
+            entity.Property(x => x.Password)
+                .IsRequired();
 
             entity.Property(x => x.CreatedAt)
                 .IsRequired()

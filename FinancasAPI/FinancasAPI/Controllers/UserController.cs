@@ -1,6 +1,8 @@
-﻿using FinancasAPI.Domain.Entities;
+﻿using FinancasAPI.Applications.Services.Tokens;
+using FinancasAPI.Domain.Entities;
 using FinancasAPI.Domain.Entities.Factory;
 using FinancasAPI.Domain.Interfaces.IServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FinancasAPI.Controllers
@@ -20,6 +22,7 @@ namespace FinancasAPI.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         [Route("all")]
         public IActionResult GetAllUsers()
         {
@@ -32,6 +35,35 @@ namespace FinancasAPI.Controllers
                 return Problem($"Message: {ex.Message}\nInnerException: {ex.InnerException}\nStack: {ex.StackTrace}");
             }
         }
+
+        [HttpPost]
+        [Route("login")]
+        public IActionResult Login([FromBody] LoginRequestModel loginRequester)
+        {
+            var userInfos = _userService.Login(loginRequester.email,loginRequester.password);
+            if (userInfos == null)
+                return Problem($"Usuario {loginRequester.email} não existente");
+
+            return Ok(userInfos); 
+        }
+
+        
+        [HttpGet]
+        [Authorize]
+        public IActionResult GetUserByEmail(string email)
+        {
+            try
+            {
+                var user = _userService.GetUserByEmail(email);
+                var token = GenerateTokenService.GenerateToken(user);
+                return Ok ();
+            }
+            catch(Exception ex)
+            {
+                return Problem($"Message: {ex.Message}\nInnerException: {ex.InnerException}\nStack: {ex.StackTrace}");
+            }
+        }
+
 
         [HttpPost]
         public IActionResult CreateUser(object user)
@@ -49,6 +81,7 @@ namespace FinancasAPI.Controllers
             }
         }
 
+        
 
     }
 }

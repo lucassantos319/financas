@@ -1552,11 +1552,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\programas\\financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj",
+      "projectUniqueName": "D:\\programas\\Financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj",
       "projectName": "FinancasUI",
-      "projectPath": "D:\\programas\\financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj",
+      "projectPath": "D:\\programas\\Financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj",
       "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-      "outputPath": "D:\\programas\\financas\\FinancasUI\\FinancasUI\\obj\\",
+      "outputPath": "D:\\programas\\Financas\\FinancasUI\\FinancasUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1611,7 +1611,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-            "version": "[6.0.4, 6.0.4]"
+            "version": "[6.0.5, 6.0.5]"
           }
         ],
         "frameworkReferences": {
@@ -1619,7 +1619,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

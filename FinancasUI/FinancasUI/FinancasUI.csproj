@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <Folder Include="Components\Dashboard\" />
-    <Folder Include="Components\Login\" />
     <Folder Include="Pages\Dashboard\" />
   </ItemGroup>
 
