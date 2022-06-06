@@ -47,24 +47,6 @@ namespace FinancasAPI.Controllers
             return Ok(userInfos); 
         }
 
-        
-        [HttpGet]
-        [Authorize]
-        public IActionResult GetUserByEmail(string email)
-        {
-            try
-            {
-                var user = _userService.GetUserByEmail(email);
-                var token = GenerateTokenService.GenerateToken(user);
-                return Ok ();
-            }
-            catch(Exception ex)
-            {
-                return Problem($"Message: {ex.Message}\nInnerException: {ex.InnerException}\nStack: {ex.StackTrace}");
-            }
-        }
-
-
         [HttpPost]
         public IActionResult CreateUser(object user)
         {

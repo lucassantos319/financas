@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Lh/dEoHVKd+mgv+K1lYTUN1jjj4OyKcQ/SAm8frnpuaeWs26XCiJbqlcQo1a0U8qrQedDmSwExg5Anqq82Vmlw==",
+  "dgSpecHash": "RxfTIilmQcWoV7jzjKt3DvuskKJrg4uawLaO4NsSc5MNTgVTxkGfJaFWiJVWqTdZ6ufWQt2Jm/uJ7J5cXaIy7w==",
   "success": true,
   "projectFilePath": "D:\\programas\\Financas\\FinancasUI\\FinancasUI\\FinancasUI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\lucas\\.nuget\\packages\\blazored.localstorage\\4.2.0\\blazored.localstorage.4.2.0.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.1\\microsoft.aspnetcore.authorization.6.0.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.1\\microsoft.aspnetcore.components.6.0.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.1\\microsoft.aspnetcore.components.analyzers.6.0.1.nupkg.sha512",

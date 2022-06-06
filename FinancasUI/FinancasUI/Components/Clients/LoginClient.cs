@@ -25,9 +25,15 @@ namespace FinancasUI.Components.Clients
             };
 
             var response = await PostAsync<object>(path,loginObj,"");
-            var loginUser = await response.Content.ReadFromJsonAsync<LoginUserViewModel>();
-            
-            return loginUser;
+            if  (response.IsSuccessStatusCode)
+            {
+                var loginUser = await response.Content.ReadFromJsonAsync<LoginUserViewModel>();
+                return loginUser;
+            }
+
+
+            var message = await response.Content.ReadAsStringAsync();
+            throw new Exception($"Erro no login: {message}"); 
         }
 
     }

@@ -1,4 +1,5 @@
 ﻿using FinancasUI.Components.Clients;
+using FinancasUI.ViewModels.Enums;
 
 namespace FinancasUI.Components.Login
 {
@@ -19,9 +20,22 @@ namespace FinancasUI.Components.Login
 
         public async Task SendRequest()
         {
-            sendLogin = true;
-            await loginClient.GetLogin(emailUser, passwordUser);
-            sendLogin = false;
+            try
+            {
+                sendLogin = true;
+
+                var userInfos = await loginClient.GetLogin(emailUser, passwordUser);
+                await SaveItemInStorage(userInfos, "userInfos");
+                Navigation.NavigateTo("/dashboard");
+
+                sendLogin = false;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message,ex.InnerException);
+            }
         }
+
+
     }
 }
